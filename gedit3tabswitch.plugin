@@ -1,0 +1,8 @@
+[Plugin]
+Loader=python
+Module=gedit3tabswitch
+IAge=3
+Name=GEdit3TabSwitch
+Description=Allows to ctrl+tab-switch between documents
+Authors=Flynsarmy
+Copyright=Copyright © 2011 Flynsarmy, Elia Sarti
