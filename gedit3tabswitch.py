@@ -3,8 +3,6 @@
 from gi.repository import GObject, Gtk, Gdk, Gedit
 
 class GEdit3TabSwitch(GObject.Object, Gedit.WindowActivatable):
-    __gtype_name__ = "GEdit3TabSwitch"
-
     window = GObject.property(type=Gedit.Window)
 
     def __init__(self):
@@ -14,10 +12,10 @@ class GEdit3TabSwitch(GObject.Object, Gedit.WindowActivatable):
         handlers = []
         handler_id = self.window.connect('key-press-event', self.on_key_press_event)
         handlers.append(handler_id)
-        self.window.set_data(self.__gtype_name__+"Handlers", handlers)
+        self.window.GEdit3TabSwitchHandlers = handlers
 
     def do_deactivate(self):
-        handlers = self.window.get_data(self.__gtype_name__+"Handlers")
+        handlers = self.window.GEdit3TabSwitchHandlers
         for handler_id in handlers:
             self.window.disconnect(handler_id)
 

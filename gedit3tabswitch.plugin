@@ -1,5 +1,5 @@
 [Plugin]
-Loader=python
+Loader=python3
 Module=gedit3tabswitch
 IAge=3
 Name=GEdit3TabSwitch
