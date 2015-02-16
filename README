@@ -1,3 +1,3 @@
 Tab Switcher plugin for GEdit 3.8+
 
-Allows switching between tabs with CTRL+Tab or CTRL+PgDown/PgUp. Install into ~/.local/share/gedit/plugins or /usr/lib/gedit/plugins directory
+Allows switching between tabs with CTRL+Tab. Install into ~/.local/share/gedit/plugins or /usr/lib/gedit/plugins directory
